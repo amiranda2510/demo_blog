@@ -11,6 +11,13 @@ gem 'sqlite3', '~> 1.4'
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
+
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '~> 4.2'
+
+# User CoffeScript for .coffee assets and views
+gem 'coffee-rails', '~> 5.0'
+
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 5.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -21,6 +28,17 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+
+# Make errors better looking
+gem 'better_errors', '~> 2.4'
+
+# Bulma CSS
+gem 'bulma-rails', '~> 0.9.1'
+
+# Simple form
+gem 'simple_form', '~> 5.1'
+
+
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -42,6 +60,13 @@ group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0', '>= 2.0.1'
+
+  # Guard is a command line tool to easily handle events on file system modifications.
+ gem 'guard', '~> 2.16', '>= 2.16.2'
+
+  # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
 end
 
 group :test do
